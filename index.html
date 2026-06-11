@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Peringatan Tahun Baru Islam 1448 H</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--navy:#071C3F;
+--gold:#D4AF37;
+--ivory:#F8F3E8;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:
+radial-gradient(circle at top,#173e78 0%,#071C3F 40%,#030d1f 100%);
+color:white;
+overflow-x:hidden;
+position:relative;
+}
+
+/* STARS */
+
+.star{
+position:fixed;
+background:white;
+border-radius:50%;
+opacity:.7;
+z-index:0;
+animation:twinkle 4s infinite;
+}
+
+@keyframes twinkle{
+0%,100%{opacity:.2}
+50%{opacity:1}
+}
+
+/* MOON */
+
+.moon{
+position:absolute;
+top:100px;
+right:8%;
+width:220px;
+height:220px;
+background:#fff9d9;
+border-radius:50%;
+box-shadow:
+0 0 40px #fff9d9,
+0 0 90px rgba(255,255,255,.6);
+}
+
+.moon:after{
+content:'';
+position:absolute;
+left:55px;
+top:0;
+width:220px;
+height:220px;
+background:#071C3F;
+border-radius:50%;
+}
+
+/* ORNAMENT */
+
+.corner{
+position:fixed;
+width:180px;
+height:180px;
+border:2px solid rgba(212,175,55,.2);
+pointer-events:none;
+z-index:1;
+}
+
+.tl{
+top:15px;
+left:15px;
+border-right:none;
+border-bottom:none;
+}
+
+.tr{
+top:15px;
+right:15px;
+border-left:none;
+border-bottom:none;
+}
+
+.bl{
+bottom:15px;
+left:15px;
+border-right:none;
+border-top:none;
+}
+
+.br{
+bottom:15px;
+right:15px;
+border-left:none;
+border-top:none;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:30px;
+position:relative;
+z-index:2;
+}
+
+.hero-content{
+max-width:1000px;
+}
+
+.logo-bogor{
+width:120px;
+margin:auto;
+display:block;
+margin-bottom:25px;
+filter:drop-shadow(0 0 20px rgba(255,255,255,.3));
+}
+
+.hero h4{
+letter-spacing:3px;
+color:var(--gold);
+margin-bottom:15px;
+}
+
+.hero h1{
+font-family:'Cinzel',serif;
+font-size:4rem;
+line-height:1.2;
+}
+
+.hero h1 span{
+display:block;
+color:var(--gold);
+}
+
+.hero p{
+margin-top:20px;
+font-size:1.2rem;
+color:#ddd;
+}
+
+.glass{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.1);
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.countdown{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.timebox{
+width:110px;
+padding:20px;
+}
+
+.timebox h2{
+color:var(--gold);
+font-size:2rem;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:var(--gold);
+color:#071C3F;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+margin-top:30px;
+}
+
+section{
+padding:100px 20px;
+position:relative;
+z-index:2;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+}
+
+.section-title{
+font-family:'Cinzel',serif;
+font-size:2.4rem;
+color:var(--gold);
+text-align:center;
+margin-bottom:40px;
+}
+
+.card{
+padding:35px;
+margin-bottom:25px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:none;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.2rem;
+}
+
+.logo-bogor{
+width:90px;
+}
+
+.moon{
+width:120px;
+height:120px;
+}
+
+.moon:after{
+width:120px;
+height:120px;
+left:30px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="corner tl"></div>
+<div class="corner tr"></div>
+<div class="corner bl"></div>
+<div class="corner br"></div>
+
+<div class="moon"></div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<img
+class="logo-bogor"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Lambang_Kabupaten_Bogor.svg/1920px-Lambang_Kabupaten_Bogor.svg.png">
+
+<h4>
+PEMERINTAH KABUPATEN BOGOR
+</h4>
+
+<h1>
+PERINGATAN TAHUN BARU ISLAM
+<span>1448 HIJRIAH</span>
+</h1>
+
+<p>
+Mari Menyambut Tahun Baru Islam
+Dengan Semangat Hijrah,
+Persatuan dan Kebersamaan
+</p>
+
+<div class="countdown">
+
+<div class="glass timebox">
+<h2 id="days">0</h2>
+<span>Hari</span>
+</div>
+
+<div class="glass timebox">
+<h2 id="hours">0</h2>
+<span>Jam</span>
+</div>
+
+<div class="glass timebox">
+<h2 id="minutes">0</h2>
+<span>Menit</span>
+</div>
+
+<div class="glass timebox">
+<h2 id="seconds">0</h2>
+<span>Detik</span>
+</div>
+
+</div>
+
+<a href="#detail" class="btn">
+Lihat Detail Acara
+</a>
+
+</div>
+
+</section>
+
+<!-- SAMBUTAN -->
+
+<section class="reveal">
+
+<div class="container">
+
+<h2 class="section-title">
+Sambutan
+</h2>
+
+<div class="glass card" style="text-align:center;">
+
+<img
+src="https://static.promediateknologi.id/crop/0x0:0x0/1200x0/webp/photo/p1/946/2025/02/20/Ahl-4005631301.jpg"
+style="
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #D4AF37;
+margin-bottom:25px;
+box-shadow:0 0 30px rgba(212,175,55,.4);
+">
+
+<p style="
+line-height:2;
+max-width:850px;
+margin:auto;
+">
+
+Assalamu'alaikum Warahmatullahi Wabarakatuh.
+
+Dalam rangka menyambut Tahun Baru Islam
+1448 Hijriah, marilah kita jadikan momentum
+hijrah sebagai sarana memperkuat keimanan,
+meningkatkan kepedulian sosial serta
+mempererat ukhuwah dalam kehidupan
+bermasyarakat.
+
+Dengan penuh hormat kami mengundang
+Bapak/Ibu/Saudara untuk hadir dan mengikuti
+kegiatan Peringatan Tahun Baru Islam
+1448 Hijriah yang akan dilaksanakan
+di Kelurahan Tengah Kecamatan Cibinong.
+
+Wassalamu'alaikum Warahmatullahi Wabarakatuh.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DETAIL ACARA -->
+
+<section id="detail" class="reveal">
+
+<div class="container">
+
+<h2 class="section-title">
+Detail Acara
+</h2>
+
+<div class="grid">
+
+<div class="glass card">
+
+<h3 style="color:#D4AF37">
+📅 Hari & Tanggal
+</h3>
+
+<br>
+
+<p>
+
+Selasa<br>
+16 Juni 2026 M<br>
+1 Muharam 1448 H
+
+</p>
+
+</div>
+
+<div class="glass card">
+
+<h3 style="color:#D4AF37">
+🕗 Waktu
+</h3>
+
+<br>
+
+<p>
+
+20.00 WIB<br>
+s.d. selesai
+
+</p>
+
+</div>
+
+<div class="glass card">
+
+<h3 style="color:#D4AF37">
+📍 Lokasi
+</h3>
+
+<br>
+
+<p>
+
+Kantor Kelurahan Tengah<br>
+Kecamatan Cibinong<br>
+Kabupaten Bogor
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SUSUNAN ACARA -->
+
+<section class="reveal">
+
+<div class="container">
+
+<h2 class="section-title">
+Susunan Acara
+</h2>
+
+<div class="glass card">
+
+<div style="line-height:2.5;">
+
+🕌 Pembukaan<br>
+
+📖 Pembacaan Ayat Suci Al-Qur'an<br>
+
+🎤 Sambutan<br>
+
+☪ Tausiyah Tahun Baru Islam<br>
+
+🤲 Doa Bersama<br>
+
+🍽 Ramah Tamah
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LOKASI -->
+
+<section class="reveal">
+
+<div class="container">
+
+<h2 class="section-title">
+Lokasi Acara
+</h2>
+
+<div class="glass card">
+
+<h3 style="
+color:#D4AF37;
+margin-bottom:15px;
+">
+Kantor Kelurahan Tengah
+</h3>
+
+<p>
+
+Kecamatan Cibinong
+Kabupaten Bogor
+
+</p>
+
+<div style="margin-top:30px;">
+
+<iframe
+src="https://maps.google.com/maps?q=-6.472370059148202,106.82304223539546&z=17&output=embed"
+width="100%"
+height="400"
+style="
+border:none;
+border-radius:20px;
+">
+</iframe>
+
+</div>
+
+<br>
+
+<a
+class="btn"
+target="_blank"
+href="https://www.google.com/maps?q=-6.472370059148202,106.82304223539546">
+
+Buka Google Maps
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- QR CODE -->
+
+<section class="reveal">
+
+<div class="container">
+
+<h2 class="section-title">
+Registrasi Kehadiran
+</h2>
+
+<div
+class="glass card"
+style="text-align:center;">
+
+<svg
+width="220"
+height="220"
+viewBox="0 0 220 220">
+
+<rect width="220"
+height="220"
+fill="white"/>
+
+<rect x="15"
+y="15"
+width="60"
+height="60"
+fill="black"/>
+
+<rect x="145"
+y="15"
+width="60"
+height="60"
+fill="black"/>
+
+<rect x="15"
+y="145"
+width="60"
+height="60"
+fill="black"/>
+
+<rect x="90"
+y="35"
+width="20"
+height="20"
+fill="black"/>
+
+<rect x="120"
+y="70"
+width="20"
+height="20"
+fill="black"/>
+
+<rect x="90"
+y="110"
+width="20"
+height="20"
+fill="black"/>
+
+<rect x="120"
+y="140"
+width="20"
+height="20"
+fill="black"/>
+
+<rect x="160"
+y="110"
+width="20"
+height="20"
+fill="black"/>
+
+</svg>
+
+<p>
+
+Scan QR Code
+untuk Registrasi Kehadiran
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer style="
+background:#020b18;
+padding:60px 20px;
+text-align:center;
+position:relative;
+z-index:2;
+">
+
+<img
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Lambang_Kabupaten_Bogor.svg/1920px-Lambang_Kabupaten_Bogor.svg.png"
+style="
+width:70px;
+margin-bottom:15px;
+">
+
+<h3 style="
+color:#D4AF37;
+margin-bottom:10px;
+">
+Kelurahan Tengah
+</h3>
+
+<p>
+Kecamatan Cibinong<br>
+Kabupaten Bogor
+</p>
+
+<br>
+
+<p style="
+opacity:.6;
+font-size:.9rem;
+">
+
+Peringatan Tahun Baru Islam 1448 Hijriah
+
+</p>
+
+</footer>
+
+<script>
+
+/* ===========================
+   GENERATE STARS
+=========================== */
+
+for(let i=0;i<150;i++){
+
+const star=document.createElement('div');
+
+star.className='star';
+
+let size=Math.random()*3+1;
+
+star.style.width=size+'px';
+star.style.height=size+'px';
+
+star.style.left=Math.random()*100+'vw';
+star.style.top=Math.random()*300+'vh';
+
+star.style.animationDelay=
+Math.random()*5+'s';
+
+document.body.appendChild(star);
+
+}
+
+/* ===========================
+   COUNTDOWN
+=========================== */
+
+const targetDate=
+new Date(
+"June 16, 2026 20:00:00"
+).getTime();
+
+const timer=setInterval(()=>{
+
+const now=new Date().getTime();
+
+const distance=
+targetDate-now;
+
+if(distance<0){
+
+clearInterval(timer);
+
+document.getElementById('days').innerHTML='0';
+document.getElementById('hours').innerHTML='0';
+document.getElementById('minutes').innerHTML='0';
+document.getElementById('seconds').innerHTML='0';
+
+return;
+
+}
+
+const days=Math.floor(
+distance/
+(1000*60*60*24)
+);
+
+const hours=Math.floor(
+(distance%
+(1000*60*60*24))
+/
+(1000*60*60)
+);
+
+const minutes=Math.floor(
+(distance%
+(1000*60*60))
+/
+(1000*60)
+);
+
+const seconds=Math.floor(
+(distance%
+(1000*60))
+/
+1000
+);
+
+document.getElementById('days')
+.innerHTML=days;
+
+document.getElementById('hours')
+.innerHTML=hours;
+
+document.getElementById('minutes')
+.innerHTML=minutes;
+
+document.getElementById('seconds')
+.innerHTML=seconds;
+
+},1000);
+
+/* ===========================
+   REVEAL EFFECT
+=========================== */
+
+function reveal(){
+
+const reveals=
+document.querySelectorAll('.reveal');
+
+for(let i=0;i<reveals.length;i++){
+
+const windowHeight=
+window.innerHeight;
+
+const revealTop=
+reveals[i]
+.getBoundingClientRect()
+.top;
+
+const revealPoint=120;
+
+if(
+revealTop<
+windowHeight-revealPoint
+){
+
+reveals[i]
+.classList.add('active');
+
+}
+
+}
+
+}
+
+window.addEventListener(
+'scroll',
+reveal
+);
+
+reveal();
+
+/* ===========================
+   MOON PARALLAX
+=========================== */
+
+window.addEventListener(
+'scroll',
+()=>{
+
+const moon=
+document.querySelector('.moon');
+
+const value=
+window.scrollY*0.20;
+
+moon.style.transform=
+`translateY(${value}px)`;
+
+}
+);
+
+/* ===========================
+   FLOAT TITLE
+=========================== */
+
+const title=
+document.querySelector('.hero h1');
+
+let pos=0;
+let dir=1;
+
+setInterval(()=>{
+
+pos+=dir;
+
+if(pos>8){
+dir=-1;
+}
+
+if(pos<-8){
+dir=1;
+}
+
+title.style.transform=
+`translateY(${pos}px)`;
+
+},120);
+
+/* ===========================
+   BUTTON GLOW
+=========================== */
+
+document
+.querySelectorAll('.btn')
+.forEach(btn=>{
+
+btn.addEventListener(
+'mouseenter',
+()=>{
+
+btn.style.boxShadow=
+'0 0 25px rgba(212,175,55,.8)';
+
+});
+
+btn.addEventListener(
+'mouseleave',
+()=>{
+
+btn.style.boxShadow='none';
+
+});
+
+});
+
+/* ===========================
+   SMOOTH PAGE LOAD
+=========================== */
+
+window.addEventListener(
+'load',
+()=>{
+
+document.body.style.opacity='1';
+
+}
+);
+
+</script>
+
+</body>
+</html>
