@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>Peringatan Tahun Baru Islam 1448 H</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>
+Gema Zikir Tahun Baru Islam 1448 H
+</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
 
 <style>
 
 :root{
+
 --navy:#071C3F;
+--navy2:#0A2958;
 --gold:#D4AF37;
---ivory:#F8F3E8;
+--gold2:#f6d66b;
+--white:#ffffff;
+
 }
 
 *{
@@ -27,246 +45,504 @@ scroll-behavior:smooth;
 }
 
 body{
+
 font-family:'Poppins',sans-serif;
+
 background:
-radial-gradient(circle at top,#173e78 0%,#071C3F 40%,#030d1f 100%);
+radial-gradient(
+circle at top,
+#173e78 0%,
+#071C3F 45%,
+#030d1f 100%
+);
+
 color:white;
+
 overflow-x:hidden;
+
 position:relative;
+
+min-height:100vh;
+
 }
 
-/* STARS */
+/* ======================
+   STAR FIELD
+====================== */
 
 .star{
+
 position:fixed;
+
 background:white;
+
 border-radius:50%;
+
 opacity:.7;
+
 z-index:0;
+
 animation:twinkle 4s infinite;
+
 }
 
 @keyframes twinkle{
-0%,100%{opacity:.2}
-50%{opacity:1}
+
+0%,100%{
+opacity:.2;
 }
 
-/* MOON */
+50%{
+opacity:1;
+}
+
+}
+
+/* ======================
+   MOON
+====================== */
 
 .moon{
+
 position:absolute;
+
 top:100px;
+
 right:8%;
+
 width:220px;
+
 height:220px;
+
 background:#fff9d9;
+
 border-radius:50%;
+
 box-shadow:
+
 0 0 40px #fff9d9,
-0 0 90px rgba(255,255,255,.6);
+
+0 0 90px rgba(255,255,255,.6),
+
+0 0 150px rgba(255,255,255,.3);
+
 }
 
 .moon:after{
+
 content:'';
+
 position:absolute;
+
 left:55px;
+
 top:0;
+
 width:220px;
+
 height:220px;
+
 background:#071C3F;
+
 border-radius:50%;
+
 }
 
-/* ORNAMENT */
+/* ======================
+   CORNER ORNAMENT
+====================== */
 
 .corner{
+
 position:fixed;
+
 width:180px;
+
 height:180px;
-border:2px solid rgba(212,175,55,.2);
+
+border:2px solid rgba(212,175,55,.25);
+
 pointer-events:none;
+
 z-index:1;
+
 }
 
 .tl{
+
 top:15px;
 left:15px;
+
 border-right:none;
 border-bottom:none;
+
 }
 
 .tr{
+
 top:15px;
 right:15px;
+
 border-left:none;
 border-bottom:none;
+
 }
 
 .bl{
+
 bottom:15px;
 left:15px;
+
 border-right:none;
 border-top:none;
+
 }
 
 .br{
+
 bottom:15px;
 right:15px;
+
 border-left:none;
 border-top:none;
+
 }
 
-/* HERO */
+/* ======================
+   HERO
+====================== */
 
 .hero{
+
 min-height:100vh;
+
 display:flex;
+
 align-items:center;
+
 justify-content:center;
+
 text-align:center;
+
 padding:30px;
+
 position:relative;
+
 z-index:2;
+
 }
 
 .hero-content{
-max-width:1000px;
+
+max-width:1100px;
+
+margin:auto;
+
 }
 
 .logo-bogor{
+
 width:120px;
-margin:auto;
+
 display:block;
+
+margin:auto;
+
 margin-bottom:25px;
-filter:drop-shadow(0 0 20px rgba(255,255,255,.3));
+
+filter:
+drop-shadow(
+0 0 25px rgba(255,255,255,.4)
+);
+
 }
 
 .hero h4{
-letter-spacing:3px;
+
+letter-spacing:4px;
+
+font-size:.95rem;
+
 color:var(--gold);
+
 margin-bottom:15px;
+
 }
 
 .hero h1{
+
 font-family:'Cinzel',serif;
-font-size:4rem;
+
+font-size:4.3rem;
+
 line-height:1.2;
+
+font-weight:700;
+
 }
 
 .hero h1 span{
+
 display:block;
+
 color:var(--gold);
+
 }
 
-.hero p{
-margin-top:20px;
-font-size:1.2rem;
-color:#ddd;
+.hero-subtitle{
+
+max-width:900px;
+
+margin:30px auto;
+
+line-height:2;
+
+font-size:1.15rem;
+
+color:#e7ddb8;
+
 }
+
+.hero-date{
+
+font-size:1rem;
+
+font-weight:600;
+
+letter-spacing:1px;
+
+color:white;
+
+margin-top:15px;
+
+}
+
+/* ======================
+   GLASS EFFECT
+====================== */
 
 .glass{
-background:rgba(255,255,255,.08);
-backdrop-filter:blur(20px);
-border:1px solid rgba(255,255,255,.1);
+
+background:
+rgba(255,255,255,.08);
+
+backdrop-filter:
+blur(20px);
+
+border:
+1px solid rgba(255,255,255,.08);
+
 border-radius:25px;
-box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.25);
+
 }
 
+/* ======================
+   COUNTDOWN
+====================== */
+
 .countdown{
+
 display:flex;
+
 justify-content:center;
+
 gap:15px;
+
 flex-wrap:wrap;
+
 margin-top:40px;
+
 }
 
 .timebox{
+
 width:110px;
+
 padding:20px;
+
 }
 
 .timebox h2{
-color:var(--gold);
+
 font-size:2rem;
+
+color:var(--gold);
+
+margin-bottom:8px;
+
 }
+
+.timebox span{
+
+font-size:.95rem;
+
+}
+
+/* ======================
+   BUTTON
+====================== */
 
 .btn{
+
 display:inline-block;
-padding:14px 30px;
+
+padding:15px 35px;
+
 background:var(--gold);
+
 color:#071C3F;
+
+font-weight:700;
+
 text-decoration:none;
+
 border-radius:50px;
-font-weight:bold;
-margin-top:30px;
+
+margin-top:35px;
+
+transition:.3s;
+
 }
 
+.btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 0 25px rgba(212,175,55,.8);
+
+}
+
+/* ======================
+   SECTION
+====================== */
+
 section{
-padding:100px 20px;
+
+padding:90px 20px;
+
 position:relative;
+
 z-index:2;
+
 }
 
 .container{
-max-width:1100px;
+
+max-width:1200px;
+
 margin:auto;
+
 }
 
 .section-title{
+
 font-family:'Cinzel',serif;
-font-size:2.4rem;
+
+font-size:2.5rem;
+
 color:var(--gold);
+
 text-align:center;
+
 margin-bottom:40px;
+
 }
 
 .card{
+
 padding:35px;
-margin-bottom:25px;
+
 }
 
 .grid{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+grid-template-columns:
+repeat(
+auto-fit,
+minmax(280px,1fr)
+);
+
 gap:25px;
+
 }
 
+/* ======================
+   REVEAL
+====================== */
+
 .reveal{
+
 opacity:0;
-transform:translateY(50px);
+
+transform:
+translateY(50px);
+
 transition:1s;
+
 }
 
 .reveal.active{
+
 opacity:1;
+
 transform:none;
+
 }
+
+/* ======================
+   RESPONSIVE
+====================== */
 
 @media(max-width:768px){
 
 .hero h1{
-font-size:2.2rem;
+
+font-size:2.5rem;
+
 }
 
 .logo-bogor{
+
 width:90px;
+
+}
+
+.hero-subtitle{
+
+font-size:1rem;
+
+line-height:1.8;
+
 }
 
 .moon{
+
 width:120px;
 height:120px;
+
 }
 
 .moon:after{
+
 width:120px;
 height:120px;
+
 left:30px;
+
 }
 
 }
 
 </style>
+
 </head>
+
 <body>
 
 <div class="corner tl"></div>
@@ -275,6 +551,7 @@ left:30px;
 <div class="corner br"></div>
 
 <div class="moon"></div>
+
 
 <!-- HERO -->
 
@@ -291,42 +568,93 @@ PEMERINTAH KABUPATEN BOGOR
 </h4>
 
 <h1>
-PERINGATAN TAHUN BARU ISLAM
-<span>1448 HIJRIAH</span>
+
+GEMA ZIKIR
+
+<span>
+TAHUN BARU ISLAM
+1448 HIJRIAH
+</span>
+
 </h1>
 
-<p>
-Mari Menyambut Tahun Baru Islam
-Dengan Semangat Hijrah,
-Persatuan dan Kebersamaan
-</p>
+<div class="hero-subtitle">
+
+Menyambut Tahun Baru Islam
+1 Muharam 1448 Hijriah
+
+<br><br>
+
+Bakti dan Bukti Rasa Syukur
+Hari Jadi Bogor Ke-544
+
+<br><br>
+
+Peresmian Gedung
+Kelurahan Tengah Kecamatan Cibinong
+
+</div>
+
+<div class="hero-date">
+
+📅 Senin, 15 Juni 2026
+
+<br>
+
+🕗 Pukul 20.00 WIB
+
+</div>
 
 <div class="countdown">
 
 <div class="glass timebox">
-<h2 id="days">0</h2>
+
+<h2 id="days">
+0
+</h2>
+
 <span>Hari</span>
+
 </div>
 
 <div class="glass timebox">
-<h2 id="hours">0</h2>
+
+<h2 id="hours">
+0
+</h2>
+
 <span>Jam</span>
+
 </div>
 
 <div class="glass timebox">
-<h2 id="minutes">0</h2>
+
+<h2 id="minutes">
+0
+</h2>
+
 <span>Menit</span>
+
 </div>
 
 <div class="glass timebox">
-<h2 id="seconds">0</h2>
+
+<h2 id="seconds">
+0
+</h2>
+
 <span>Detik</span>
-</div>
 
 </div>
 
-<a href="#detail" class="btn">
+</div>
+
+<a
+href="#detail"
+class="btn">
+
 Lihat Detail Acara
+
 </a>
 
 </div>
@@ -340,13 +668,19 @@ Lihat Detail Acara
 <div class="container">
 
 <h2 class="section-title">
+
 Sambutan
+
 </h2>
 
-<div class="glass card" style="text-align:center;">
+<div
+class="glass card"
+style="text-align:center;">
 
 <img
+
 src="https://static.promediateknologi.id/crop/0x0:0x0/1200x0/webp/photo/p1/946/2025/02/20/Ahl-4005631301.jpg"
+
 style="
 width:180px;
 height:180px;
@@ -354,31 +688,45 @@ border-radius:50%;
 object-fit:cover;
 border:5px solid #D4AF37;
 margin-bottom:25px;
-box-shadow:0 0 30px rgba(212,175,55,.4);
+box-shadow:
+0 0 30px rgba(212,175,55,.4);
 ">
 
-<p style="
+<p
+style="
 line-height:2;
-max-width:850px;
+max-width:900px;
 margin:auto;
 ">
 
-Assalamu'alaikum Warahmatullahi Wabarakatuh.
+Assalamu'alaikum
+Warahmatullahi Wabarakatuh.
 
-Dalam rangka menyambut Tahun Baru Islam
-1448 Hijriah, marilah kita jadikan momentum
-hijrah sebagai sarana memperkuat keimanan,
-meningkatkan kepedulian sosial serta
-mempererat ukhuwah dalam kehidupan
-bermasyarakat.
+<br><br>
 
-Dengan penuh hormat kami mengundang
-Bapak/Ibu/Saudara untuk hadir dan mengikuti
-kegiatan Peringatan Tahun Baru Islam
-1448 Hijriah yang akan dilaksanakan
-di Kelurahan Tengah Kecamatan Cibinong.
+Dalam rangka menyambut
+Tahun Baru Islam
+1448 Hijriah,
+kami mengundang seluruh
+masyarakat untuk hadir
+dalam kegiatan Gema Zikir
+yang dilaksanakan sebagai
+wujud syukur atas datangnya
+tahun baru Islam serta
+peresmian Gedung Kelurahan Tengah.
 
-Wassalamu'alaikum Warahmatullahi Wabarakatuh.
+<br><br>
+
+Mari bersama-sama
+menguatkan ukhuwah,
+mempererat silaturahmi,
+serta meningkatkan
+keimanan dan ketakwaan.
+
+<br><br>
+
+Wassalamu'alaikum
+Warahmatullahi Wabarakatuh.
 
 </p>
 
@@ -390,28 +738,41 @@ Wassalamu'alaikum Warahmatullahi Wabarakatuh.
 
 <!-- DETAIL ACARA -->
 
-<section id="detail" class="reveal">
+<section
+id="detail"
+class="reveal">
 
 <div class="container">
 
 <h2 class="section-title">
+
 Detail Acara
+
 </h2>
 
 <div class="grid">
 
 <div class="glass card">
 
-<h3 style="color:#D4AF37">
+<h3
+style="color:#D4AF37;">
+
 📅 Hari & Tanggal
+
 </h3>
 
 <br>
 
 <p>
 
-Senin<br>
-15 Juni 2026 M<br>
+Senin
+
+<br>
+
+15 Juni 2026 M
+
+<br>
+
 1 Muharam 1448 H
 
 </p>
@@ -420,15 +781,21 @@ Senin<br>
 
 <div class="glass card">
 
-<h3 style="color:#D4AF37">
+<h3
+style="color:#D4AF37;">
+
 🕗 Waktu
+
 </h3>
 
 <br>
 
 <p>
 
-20.00 WIB<br>
+20.00 WIB
+
+<br>
+
 s.d. selesai
 
 </p>
@@ -437,16 +804,25 @@ s.d. selesai
 
 <div class="glass card">
 
-<h3 style="color:#D4AF37">
-📍 Lokasi
+<h3
+style="color:#D4AF37;">
+
+📍 Tempat
+
 </h3>
 
 <br>
 
 <p>
 
-Kantor Kelurahan Tengah<br>
-Kecamatan Cibinong<br>
+Kantor Kelurahan Tengah
+
+<br>
+
+Kecamatan Cibinong
+
+<br>
+
 Kabupaten Bogor
 
 </p>
@@ -466,24 +842,140 @@ Kabupaten Bogor
 <div class="container">
 
 <h2 class="section-title">
+
 Susunan Acara
+
 </h2>
 
 <div class="glass card">
 
-<div style="line-height:2.5;">
+<div
+style="
+max-width:900px;
+margin:auto;
+line-height:2.2;
+">
 
-🕌 Pembukaan<br>
+<div style="margin-bottom:25px;">
 
-📖 Pembacaan Ayat Suci Al-Qur'an<br>
+<h3 style="color:#D4AF37;">
 
-🎤 Sambutan<br>
+20.00 – 20.30 WIB
 
-☪ Tausiyah Tahun Baru Islam<br>
+</h3>
 
-🤲 Doa Bersama<br>
+Penyambutan Kafilah Pawai Obor
 
-🍽 Ramah Tamah
+<br>
+
+Penampilan Hadrah dan Qosidah
+
+</div>
+
+<hr
+style="
+opacity:.2;
+margin:20px 0;
+">
+
+<div style="margin-bottom:25px;">
+
+<h3 style="color:#D4AF37;">
+
+20.30 – 21.00 WIB
+
+</h3>
+
+Zikir Bersama dan Marhabanan
+
+</div>
+
+<hr
+style="
+opacity:.2;
+margin:20px 0;
+">
+
+<div style="margin-bottom:25px;">
+
+<h3 style="color:#D4AF37;">
+
+21.00 – 21.25 WIB
+
+</h3>
+
+Sambutan-sambutan
+
+<ul style="margin-top:10px;">
+
+<li>Sambutan Lurah Tengah</li>
+
+<li>Sambutan Camat Cibinong</li>
+
+<li>Sambutan Bupati Bogor</li>
+
+</ul>
+
+</div>
+
+<hr
+style="
+opacity:.2;
+margin:20px 0;
+">
+
+<div style="margin-bottom:25px;">
+
+<h3 style="color:#D4AF37;">
+
+21.30 – 22.30 WIB
+
+</h3>
+
+Tausiyah Tahun Baru Islam
+
+<br>
+
+(Hikmah Hijrah)
+
+</div>
+
+<hr
+style="
+opacity:.2;
+margin:20px 0;
+">
+
+<div style="margin-bottom:25px;">
+
+<h3 style="color:#D4AF37;">
+
+22.30 WIB
+
+</h3>
+
+Doa Penutup
+
+</div>
+
+<hr
+style="
+opacity:.2;
+margin:20px 0;
+">
+
+<div>
+
+<h3 style="color:#D4AF37;">
+
+22.30 WIB – Selesai
+
+</h3>
+
+Peserta dan Undangan
+Kembali ke Rumah Masing-masing
+
+</div>
 
 </div>
 
@@ -500,16 +992,21 @@ Susunan Acara
 <div class="container">
 
 <h2 class="section-title">
+
 Lokasi Acara
+
 </h2>
 
 <div class="glass card">
 
-<h3 style="
+<h3
+style="
 color:#D4AF37;
 margin-bottom:15px;
 ">
+
 Kantor Kelurahan Tengah
+
 </h3>
 
 <p>
@@ -519,12 +1016,13 @@ Kabupaten Bogor
 
 </p>
 
-<div style="margin-top:30px;">
+<div
+style="margin-top:30px;">
 
 <iframe
 src="https://maps.google.com/maps?q=-6.472370059148202,106.82304223539546&z=17&output=embed"
 width="100%"
-height="400"
+height="450"
 style="
 border:none;
 border-radius:20px;
@@ -550,95 +1048,10 @@ Buka Google Maps
 
 </section>
 
-<!-- QR CODE -->
-
-<section class="reveal">
-
-<div class="container">
-
-<h2 class="section-title">
-Registrasi Kehadiran
-</h2>
-
-<div
-class="glass card"
-style="text-align:center;">
-
-<svg
-width="220"
-height="220"
-viewBox="0 0 220 220">
-
-<rect width="220"
-height="220"
-fill="white"/>
-
-<rect x="15"
-y="15"
-width="60"
-height="60"
-fill="black"/>
-
-<rect x="145"
-y="15"
-width="60"
-height="60"
-fill="black"/>
-
-<rect x="15"
-y="145"
-width="60"
-height="60"
-fill="black"/>
-
-<rect x="90"
-y="35"
-width="20"
-height="20"
-fill="black"/>
-
-<rect x="120"
-y="70"
-width="20"
-height="20"
-fill="black"/>
-
-<rect x="90"
-y="110"
-width="20"
-height="20"
-fill="black"/>
-
-<rect x="120"
-y="140"
-width="20"
-height="20"
-fill="black"/>
-
-<rect x="160"
-y="110"
-width="20"
-height="20"
-fill="black"/>
-
-</svg>
-
-<p>
-
-Scan QR Code
-untuk Registrasi Kehadiran
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
 <!-- FOOTER -->
 
-<footer style="
+<footer
+style="
 background:#020b18;
 padding:60px 20px;
 text-align:center;
@@ -653,26 +1066,36 @@ width:70px;
 margin-bottom:15px;
 ">
 
-<h3 style="
+<h3
+style="
 color:#D4AF37;
 margin-bottom:10px;
 ">
+
 Kelurahan Tengah
+
 </h3>
 
 <p>
-Kecamatan Cibinong<br>
+
+Kecamatan Cibinong
+
+<br>
+
 Kabupaten Bogor
+
 </p>
 
 <br>
 
-<p style="
+<p
+style="
 opacity:.6;
 font-size:.9rem;
 ">
 
-Peringatan Tahun Baru Islam 1448 Hijriah
+Gema Zikir Tahun Baru Islam
+1448 Hijriah
 
 </p>
 
@@ -680,23 +1103,29 @@ Peringatan Tahun Baru Islam 1448 Hijriah
 
 <script>
 
-/* ===========================
-   GENERATE STARS
-=========================== */
+/* BINTANG */
 
 for(let i=0;i<150;i++){
 
-const star=document.createElement('div');
+const star=
+document.createElement('div');
 
 star.className='star';
 
-let size=Math.random()*3+1;
+let size=
+Math.random()*3+1;
 
-star.style.width=size+'px';
-star.style.height=size+'px';
+star.style.width=
+size+'px';
 
-star.style.left=Math.random()*100+'vw';
-star.style.top=Math.random()*300+'vh';
+star.style.height=
+size+'px';
+
+star.style.left=
+Math.random()*100+'vw';
+
+star.style.top=
+Math.random()*300+'vh';
 
 star.style.animationDelay=
 Math.random()*5+'s';
@@ -705,18 +1134,23 @@ document.body.appendChild(star);
 
 }
 
-/* ===========================
-   COUNTDOWN
-=========================== */
+/* COUNTDOWN */
 
 const targetDate=
 new Date(
-"June 15, 2026 20:00:00"
+2026,
+5,
+15,
+20,
+0,
+0
 ).getTime();
 
-const timer=setInterval(()=>{
+const timer=
+setInterval(()=>{
 
-const now=new Date().getTime();
+const now=
+new Date().getTime();
 
 const distance=
 targetDate-now;
@@ -725,58 +1159,48 @@ if(distance<0){
 
 clearInterval(timer);
 
-document.getElementById('days').innerHTML='0';
-document.getElementById('hours').innerHTML='0';
-document.getElementById('minutes').innerHTML='0';
-document.getElementById('seconds').innerHTML='0';
-
 return;
 
 }
 
-const days=Math.floor(
+const days=
+Math.floor(
 distance/
 (1000*60*60*24)
 );
 
-const hours=Math.floor(
+const hours=
+Math.floor(
 (distance%
 (1000*60*60*24))
 /
 (1000*60*60)
 );
 
-const minutes=Math.floor(
+const minutes=
+Math.floor(
 (distance%
 (1000*60*60))
 /
 (1000*60)
 );
 
-const seconds=Math.floor(
+const seconds=
+Math.floor(
 (distance%
 (1000*60))
 /
 1000
 );
 
-document.getElementById('days')
-.innerHTML=days;
-
-document.getElementById('hours')
-.innerHTML=hours;
-
-document.getElementById('minutes')
-.innerHTML=minutes;
-
-document.getElementById('seconds')
-.innerHTML=seconds;
+document.getElementById('days').innerHTML=days;
+document.getElementById('hours').innerHTML=hours;
+document.getElementById('minutes').innerHTML=minutes;
+document.getElementById('seconds').innerHTML=seconds;
 
 },1000);
 
-/* ===========================
-   REVEAL EFFECT
-=========================== */
+/* SCROLL EFFECT */
 
 function reveal(){
 
@@ -793,12 +1217,8 @@ reveals[i]
 .getBoundingClientRect()
 .top;
 
-const revealPoint=120;
-
-if(
-revealTop<
-windowHeight-revealPoint
-){
+if(revealTop<
+windowHeight-120){
 
 reveals[i]
 .classList.add('active');
@@ -815,93 +1235,6 @@ reveal
 );
 
 reveal();
-
-/* ===========================
-   MOON PARALLAX
-=========================== */
-
-window.addEventListener(
-'scroll',
-()=>{
-
-const moon=
-document.querySelector('.moon');
-
-const value=
-window.scrollY*0.20;
-
-moon.style.transform=
-`translateY(${value}px)`;
-
-}
-);
-
-/* ===========================
-   FLOAT TITLE
-=========================== */
-
-const title=
-document.querySelector('.hero h1');
-
-let pos=0;
-let dir=1;
-
-setInterval(()=>{
-
-pos+=dir;
-
-if(pos>8){
-dir=-1;
-}
-
-if(pos<-8){
-dir=1;
-}
-
-title.style.transform=
-`translateY(${pos}px)`;
-
-},120);
-
-/* ===========================
-   BUTTON GLOW
-=========================== */
-
-document
-.querySelectorAll('.btn')
-.forEach(btn=>{
-
-btn.addEventListener(
-'mouseenter',
-()=>{
-
-btn.style.boxShadow=
-'0 0 25px rgba(212,175,55,.8)';
-
-});
-
-btn.addEventListener(
-'mouseleave',
-()=>{
-
-btn.style.boxShadow='none';
-
-});
-
-});
-
-/* ===========================
-   SMOOTH PAGE LOAD
-=========================== */
-
-window.addEventListener(
-'load',
-()=>{
-
-document.body.style.opacity='1';
-
-}
-);
 
 </script>
 
